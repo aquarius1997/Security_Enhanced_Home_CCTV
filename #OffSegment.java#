@@ -1,0 +1,20 @@
+import com.pi4j.io.gpio.*;
+import java.lang.*;
+
+public class OffSegment implements Runnable {
+
+    public void run() {
+	System.out.println("Off Segment...");
+
+	List<Pin> digitsPin = new ArrayList(Arrays.asList(RaspiPin.GPIO_26,
+							  RaspiPin.GPIO_05,
+							  RaspiPin.GPIO_03,
+							  RaspiPin.GPIO_01));
+	List<GpioPinDigitalOutput> digits = new ArrayList<>();
+
+	for(i=0; i<digitsPin.size(); i++) {
+	    digits.add(gpio.provisionDigitalOutputPin(digitsPin.get(i), PinState.HIGH));
+	}
+
+	
+	
