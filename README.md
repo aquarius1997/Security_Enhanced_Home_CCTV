@@ -35,7 +35,7 @@
 
 --------------------------------
 
-## 적용 알고리즘
+### 적용 알고리즘
 
 1. Setup(1^n) -> (PP, msk) : IP카메라 제조사가 시스템 전체에 사용되는 공개파라미터(PP)와 마스터키(msk)를 생성
 
@@ -44,5 +44,14 @@
 3. Sign(M, SKid) -> message signature : 메세지(M)를 서명해 메세지서명을 출력
 
 4. Verify(message signature, M, PP) -> True or False : 입력으로 받은 메세지서명이 메세지에 대응하는 것이 맞는지 검증. 올바를 경우 True를 출력
+
+-------------------------------
+
+### 적용한 암호화 기법들
+
+* Sign / Verify 
+* SHA256 Hash function
+* Diffie-Hellman key exchange
+* AES-GCM Enc
 
 
