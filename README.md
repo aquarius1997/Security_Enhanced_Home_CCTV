@@ -25,7 +25,7 @@
 
 ### 개발언어
 
-:bangbang: ID기반 서명 및 키교환 프로토콜을 구성하는 네 가지 암호화 알고리즘은 C언어로 작성되었기 때문에 JNI(Java Native Interface)를 사용함
+:bangbang: ID기반 서명 및 키교환 프로토콜을 구성하는 네가지 암호화 알고리즘은 C언어로 작성되었기 때문에 JNI(Java Native Interface)를 사용함
 * Java
 * C
 
@@ -33,9 +33,9 @@
 
 ## 적용 알고리즘
 
-1. Setup(1^n) -> (PP, msk) : IP카메라 제조사가 시스템 전첵 사용되느 공개파라미터(PP)와 마스터키(msk)를 생성
+1. Setup(1^n) -> (PP, msk) : IP카메라 제조사가 시스템 전체에 사용되는 공개파라미터(PP)와 마스터키(msk)를 생성
 
-2. KeyGen(ID, msk) -> SKid : IP카메라 제조사가 msk로 IP카메라의 ID와 사용자의 ID에 대응하는 서명키를 생성 (SKclient는 애플리케이션을 다운로드할 때 애플리케이션 스토어엣 제공하는 보안채널을 통해 다운로드해야함)
+2. KeyGen(ID, msk) -> SKid : IP카메라 제조사가 msk로 IP카메라의 ID와 사용자의 ID에 대응하는 서명키를 생성 (SKclient는 애플리케이션을 다운로드할 때 애플리케이션 스토어에서 제공하는 보안채널을 통해 다운로드해야함)
 
 3. Sign(M, SKid) -> message signature : 메세지(M)를 서명해 메세지서명을 출력
 
