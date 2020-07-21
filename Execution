@@ -1,1 +1,0 @@
-sudo java -cp .:/opt/pi4j/lib/pi4j-core.jar -Djava.library.path=. -Dpi4j.linking=dynamic -classpath .:/opt/pi4j/lib/'*' IBSClient
